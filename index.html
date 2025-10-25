@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tıp Fakülteleri - Türkiye</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Türkiye'deki Tıp Fakülteleri</h1>
+            <p class="subtitle">Tıp eğitimi veren üniversiteler</p>
+            <p><em>USD$1 = 41.50₺</em></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Tümü</button>
+            <button class="filter-btn" data-filter="devlet">Devlet</button>
+            <button class="filter-btn" data-filter="vakif">Vakıf</button>
+            <button class="filter-btn" data-filter="kktc">KKTC</button>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Üniversite ara...">
+        </div>
+
+        <div id="universityGrid" class="university-grid">
+            <!-- Universities will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tıp Fakülteleri Rehberi</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
